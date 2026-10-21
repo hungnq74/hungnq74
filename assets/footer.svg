@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-label="Thanks for stopping by">
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .w1 { animation: slide 22s linear infinite; }
+    .w2 { animation: slide 15s linear infinite reverse; }
+    .w3 { animation: slide 10s linear infinite; }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-600px); } }
+    .sp { transform-box: fill-box; transform-origin: center; animation: sparkle 4s ease-in-out infinite; }
+    @keyframes sparkle { 0%, 100% { opacity: .3; transform: scale(.4) rotate(0deg); } 50% { opacity: 1; transform: scale(1) rotate(90deg); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="mid" x1="0" x2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#ff8fab"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#121845"/>
+      <stop offset="1" stop-color="#2a1650"/>
+    </linearGradient>
+    <clipPath id="card"><rect y="-40" width="1200" height="190" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <path class="w1" d="M0 64 q150.0 -28 300.0 0 t300.0 0 t300.0 0 t300.0 0 t300.0 0 t300.0 0 V150 H0Z" fill="#7c6cff" opacity=".3"/>
+    <path class="w2" d="M0 80 q150.0 -24 300.0 0 t300.0 0 t300.0 0 t300.0 0 t300.0 0 t300.0 0 V150 H0Z" fill="url(#mid)" opacity=".45"/>
+    <path class="w3" d="M0 98 q150.0 -20 300.0 0 t300.0 0 t300.0 0 t300.0 0 t300.0 0 t300.0 0 V150 H0Z" fill="url(#front)"/>
+    <text class="mono" x="600" y="132" text-anchor="middle" font-size="14" letter-spacing="2" fill="#e4e6ff">thanks for stopping by  <tspan fill="#ffb347">✦</tspan>  have a dreamy day</text>
+    <g transform="translate(300 126) scale(0.55)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#ffe7b0" style="animation-delay:0.0s"/></g>
+    <g transform="translate(900 126) scale(0.55)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#ffe7b0" style="animation-delay:-1.3s"/></g>
+    <g transform="translate(120 138) scale(0.4)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#ffe7b0" style="animation-delay:-2.6s"/></g>
+    <g transform="translate(1080 136) scale(0.4)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#ffe7b0" style="animation-delay:-3.9s"/></g>
+  </g>
+</svg>

@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" width="420" height="340" role="img" aria-label="My stack orbiting a planet: TypeScript, Python, Flutter, Postgres, Swift, Docker">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; }
+    .tw { animation: twinkle 4s ease-in-out infinite; }
+    @keyframes twinkle { 0%, 100% { opacity: .2; } 50% { opacity: 1; } }
+    .band { animation: spin 10s linear infinite; }
+    @keyframes spin { to { stroke-dashoffset: -112; } }
+    .halo { transform-box: fill-box; transform-origin: center; animation: breathe 5s ease-in-out infinite; }
+    @keyframes breathe { 0%, 100% { opacity: .6; transform: scale(.9); } 50% { opacity: 1; transform: scale(1.1); } }
+    .blink { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f2c"/>
+      <stop offset="1" stop-color="#24154a"/>
+    </linearGradient>
+    <radialGradient id="planet" cx=".38" cy=".32" r=".75">
+      <stop offset="0" stop-color="#ffe0a8"/>
+      <stop offset=".45" stop-color="#ff9f68"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </radialGradient>
+    <radialGradient id="shade" cx=".3" cy=".28" r=".8">
+      <stop offset=".55" stop-color="#1b0b2e" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1b0b2e" stop-opacity=".6"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#ff9f68" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#ff9f68" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="ball"><circle cx="210" cy="180" r="44"/></clipPath>
+    <clipPath id="front"><rect x="100" y="180" width="220" height="80" transform="rotate(-16 210 180)"/></clipPath>
+    <clipPath id="card"><rect width="420" height="340" rx="20"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="420" height="340" fill="url(#bg)"/>
+    <circle class="tw" cx="140.2" cy="87.7" r="1.8" fill="#ffe7b0" style="animation-duration:2.4s;animation-delay:-4.9s"/>
+    <circle class="tw" cx="242.8" cy="277.4" r="0.8" fill="#ffe7b0" style="animation-duration:2.3s;animation-delay:-2.6s"/>
+    <circle class="tw" cx="47.9" cy="156.1" r="1.4" fill="#ffffff" style="animation-duration:2.6s;animation-delay:-1.3s"/>
+    <circle class="tw" cx="387.3" cy="194.3" r="1.2" fill="#ffffff" style="animation-duration:2.4s;animation-delay:-1.3s"/>
+    <circle class="tw" cx="64.7" cy="154.8" r="1.4" fill="#ffffff" style="animation-duration:2.6s;animation-delay:-1.9s"/>
+    <circle class="tw" cx="83.6" cy="195.4" r="1.8" fill="#ffffff" style="animation-duration:2.8s;animation-delay:-0.6s"/>
+    <circle class="tw" cx="235.5" cy="204.8" r="1.2" fill="#ffffff" style="animation-duration:4.5s;animation-delay:-2.6s"/>
+    <circle class="tw" cx="243.9" cy="163.3" r="1.0" fill="#ffffff" style="animation-duration:3.0s;animation-delay:-1.1s"/>
+    <circle class="tw" cx="44.4" cy="125.1" r="1.2" fill="#ffffff" style="animation-duration:5.2s;animation-delay:-4.4s"/>
+    <circle class="tw" cx="400.1" cy="79.5" r="1.2" fill="#ffffff" style="animation-duration:2.8s;animation-delay:-2.1s"/>
+    <circle class="tw" cx="179" cy="290.5" r="0.6" fill="#ffffff" style="animation-duration:4.8s;animation-delay:-3.4s"/>
+    <circle class="tw" cx="136.2" cy="223.8" r="1.4" fill="#ffe7b0" style="animation-duration:3.9s;animation-delay:-4.8s"/>
+    <circle class="tw" cx="49.1" cy="117.5" r="1.8" fill="#ffffff" style="animation-duration:4.5s;animation-delay:-0.4s"/>
+    <circle class="tw" cx="268.3" cy="298.3" r="1.2" fill="#ffffff" style="animation-duration:3.2s;animation-delay:-2.3s"/>
+    <circle class="tw" cx="20.9" cy="165.4" r="0.8" fill="#ffe7b0" style="animation-duration:4.3s;animation-delay:-3.0s"/>
+    <circle class="tw" cx="125.8" cy="234.6" r="1.2" fill="#ffe7b0" style="animation-duration:3.5s;animation-delay:-5.2s"/>
+    <circle class="tw" cx="189.9" cy="187.4" r="0.8" fill="#ffffff" style="animation-duration:5.0s;animation-delay:-5.2s"/>
+    <circle class="tw" cx="176.5" cy="139.7" r="1.2" fill="#ffe7b0" style="animation-duration:5.5s;animation-delay:-0.9s"/>
+    <circle class="tw" cx="103.9" cy="108.3" r="1.2" fill="#ffffff" style="animation-duration:5.0s;animation-delay:-1.1s"/>
+    <circle class="tw" cx="69.7" cy="183.6" r="1.4" fill="#ffffff" style="animation-duration:4.1s;animation-delay:-5.7s"/>
+    <circle class="tw" cx="216.1" cy="204.4" r="1.8" fill="#ffffff" style="animation-duration:4.7s;animation-delay:-2.7s"/>
+    <circle class="tw" cx="388.9" cy="220.1" r="1.4" fill="#ffe7b0" style="animation-duration:3.5s;animation-delay:-2.4s"/>
+    <circle class="tw" cx="263.2" cy="65.6" r="0.6" fill="#ffe7b0" style="animation-duration:5.5s;animation-delay:-2.6s"/>
+    <circle class="tw" cx="249.9" cy="75.6" r="1.4" fill="#ffffff" style="animation-duration:2.7s;animation-delay:-0.6s"/>
+    <circle class="tw" cx="22.1" cy="268.6" r="1.4" fill="#ffffff" style="animation-duration:3.5s;animation-delay:-3.8s"/>
+    <circle class="tw" cx="250.5" cy="168.5" r="0.6" fill="#ffffff" style="animation-duration:5.1s;animation-delay:-6.0s"/>
+    <circle class="tw" cx="203.6" cy="71.5" r="0.6" fill="#ffffff" style="animation-duration:4.7s;animation-delay:-4.4s"/>
+    <circle class="tw" cx="286.1" cy="179.1" r="0.8" fill="#ffe7b0" style="animation-duration:5.4s;animation-delay:-3.2s"/>
+    <circle class="tw" cx="227.1" cy="56.8" r="1.4" fill="#ffe7b0" style="animation-duration:3.2s;animation-delay:-3.9s"/>
+    <circle class="tw" cx="346.8" cy="179.6" r="0.8" fill="#ffffff" style="animation-duration:3.4s;animation-delay:-1.3s"/>
+
+    <text class="mono" x="22" y="34" font-size="13" fill="#9aa3ff">~/stack <tspan fill="#ffb347">$</tspan> ls --orbit<tspan class="blink" fill="#ffb347"> ▍</tspan></text>
+
+    <circle class="halo" cx="210" cy="180" r="96" fill="url(#halo)"/>
+    <path d="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9" fill="none" stroke="#c9ccf5" stroke-opacity=".22" stroke-dasharray="3 6"/>
+
+    <ellipse cx="210" cy="180" rx="74" ry="15" transform="rotate(-16 210 180)" fill="none" stroke="#ffe7b0" stroke-opacity=".45" stroke-width="3"/>
+    <circle cx="210" cy="180" r="44" fill="url(#planet)"/>
+    <g clip-path="url(#ball)">
+      <line class="band" x1="100" y1="158" x2="330" y2="158" stroke="#7c2d12" stroke-opacity="0.22" stroke-width="3" stroke-linecap="round" stroke-dasharray="40 16" style="animation-duration:9s"/>
+      <line class="band" x1="100" y1="170" x2="330" y2="170" stroke="#fff" stroke-opacity="0.16" stroke-width="2" stroke-linecap="round" stroke-dasharray="18 10" style="animation-duration:13s"/>
+      <line class="band" x1="100" y1="186" x2="330" y2="186" stroke="#9a3412" stroke-opacity="0.22" stroke-width="4" stroke-linecap="round" stroke-dasharray="70 42" style="animation-duration:7s"/>
+      <line class="band" x1="100" y1="200" x2="330" y2="200" stroke="#fff" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round" stroke-dasharray="12 16" style="animation-duration:11s"/>
+      <line class="band" x1="100" y1="212" x2="330" y2="212" stroke="#7c2d12" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round" stroke-dasharray="40 16" style="animation-duration:8s"/>
+    </g>
+    <circle cx="210" cy="180" r="44" fill="url(#shade)"/>
+    <g clip-path="url(#front)"><ellipse cx="210" cy="180" rx="74" ry="15" transform="rotate(-16 210 180)" fill="none" stroke="#ffe7b0" stroke-opacity=".75" stroke-width="3"/></g>
+
+    <g>
+      <animateMotion dur="28s" begin="-0.00s" repeatCount="indefinite" path="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" dur="28s" begin="-0.00s" repeatCount="indefinite" values=".9;1.08;.9;.7;.9" keyTimes="0;.25;.5;.75;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+        <animate attributeName="opacity" dur="28s" begin="-0.00s" repeatCount="indefinite" values=".9;1;.9;.5;.9" keyTimes="0;.25;.5;.75;1"/>
+        <rect x="-50.0" y="-13" width="100.0" height="26" rx="13" fill="#3178c6"/>
+        <rect x="-50.0" y="-13" width="100.0" height="26" rx="13" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">TypeScript</text>
+      </g>
+    </g>
+    <g>
+      <animateMotion dur="28s" begin="-4.67s" repeatCount="indefinite" path="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" dur="28s" begin="-4.67s" repeatCount="indefinite" values=".9;1.08;.9;.7;.9" keyTimes="0;.25;.5;.75;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+        <animate attributeName="opacity" dur="28s" begin="-4.67s" repeatCount="indefinite" values=".9;1;.9;.5;.9" keyTimes="0;.25;.5;.75;1"/>
+        <rect x="-34.8" y="-13" width="69.6" height="26" rx="13" fill="#3776ab"/>
+        <rect x="-34.8" y="-13" width="69.6" height="26" rx="13" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Python</text>
+      </g>
+    </g>
+    <g>
+      <animateMotion dur="28s" begin="-9.33s" repeatCount="indefinite" path="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" dur="28s" begin="-9.33s" repeatCount="indefinite" values=".9;1.08;.9;.7;.9" keyTimes="0;.25;.5;.75;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+        <animate attributeName="opacity" dur="28s" begin="-9.33s" repeatCount="indefinite" values=".9;1;.9;.5;.9" keyTimes="0;.25;.5;.75;1"/>
+        <rect x="-38.6" y="-13" width="77.2" height="26" rx="13" fill="#0468d7"/>
+        <rect x="-38.6" y="-13" width="77.2" height="26" rx="13" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Flutter</text>
+      </g>
+    </g>
+    <g>
+      <animateMotion dur="28s" begin="-14.00s" repeatCount="indefinite" path="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" dur="28s" begin="-14.00s" repeatCount="indefinite" values=".9;1.08;.9;.7;.9" keyTimes="0;.25;.5;.75;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+        <animate attributeName="opacity" dur="28s" begin="-14.00s" repeatCount="indefinite" values=".9;1;.9;.5;.9" keyTimes="0;.25;.5;.75;1"/>
+        <rect x="-42.4" y="-13" width="84.8" height="26" rx="13" fill="#336791"/>
+        <rect x="-42.4" y="-13" width="84.8" height="26" rx="13" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Postgres</text>
+      </g>
+    </g>
+    <g>
+      <animateMotion dur="28s" begin="-18.67s" repeatCount="indefinite" path="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" dur="28s" begin="-18.67s" repeatCount="indefinite" values=".9;1.08;.9;.7;.9" keyTimes="0;.25;.5;.75;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+        <animate attributeName="opacity" dur="28s" begin="-18.67s" repeatCount="indefinite" values=".9;1;.9;.5;.9" keyTimes="0;.25;.5;.75;1"/>
+        <rect x="-31.0" y="-13" width="62.0" height="26" rx="13" fill="#f05138"/>
+        <rect x="-31.0" y="-13" width="62.0" height="26" rx="13" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Swift</text>
+      </g>
+    </g>
+    <g>
+      <animateMotion dur="28s" begin="-23.33s" repeatCount="indefinite" path="M346.9 150.9 A140 58 -12 1 1 73.1 209.1 A140 58 -12 1 1 346.9 150.9"/>
+      <g>
+        <animateTransform attributeName="transform" type="scale" dur="28s" begin="-23.33s" repeatCount="indefinite" values=".9;1.08;.9;.7;.9" keyTimes="0;.25;.5;.75;1" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+        <animate attributeName="opacity" dur="28s" begin="-23.33s" repeatCount="indefinite" values=".9;1;.9;.5;.9" keyTimes="0;.25;.5;.75;1"/>
+        <rect x="-34.8" y="-13" width="69.6" height="26" rx="13" fill="#1d63ed"/>
+        <rect x="-34.8" y="-13" width="69.6" height="26" rx="13" fill="none" stroke="#fff" stroke-opacity=".25"/>
+        <text y="4.5" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Docker</text>
+      </g>
+    </g>
+
+    <text class="mono" x="210" y="318" text-anchor="middle" font-size="12" fill="#8b90c8">things orbiting my brain lately</text>
+  </g>
+  <rect x=".5" y=".5" width="419" height="339" rx="20" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+</svg>

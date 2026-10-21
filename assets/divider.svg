@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 28" width="1200" height="28" role="presentation">
+  <style>
+    .comet { animation: comet 6s cubic-bezier(.5, 0, .5, 1) infinite; }
+    @keyframes comet { from { transform: translateX(0); } to { transform: translateX(1440px); } }
+    .sp { transform-box: fill-box; transform-origin: center; animation: sparkle 4s ease-in-out infinite; }
+    @keyframes sparkle { 0%, 100% { transform: scale(.7) rotate(0deg); } 50% { transform: scale(1.1) rotate(90deg); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <defs>
+    <linearGradient id="rule" x1="0" x2="1">
+      <stop offset="0" stop-color="#9aa3ff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#9aa3ff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#9aa3ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="comet" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+    <clipPath id="track"><rect x="40" y="0" width="1120" height="28"/></clipPath>
+  </defs>
+  <rect x="40" y="13.5" width="1120" height="1" fill="url(#rule)"/>
+  <g clip-path="url(#track)"><rect class="comet" x="-200" y="12.5" width="180" height="3" rx="1.5" fill="url(#comet)"/></g>
+  <g transform="translate(600 14)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#ffb347"/></g>
+  <g transform="translate(572 14) scale(.45)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#9aa3ff" style="animation-delay:-1.3s"/></g>
+  <g transform="translate(628 14) scale(.45)"><path class="sp" d="M0,-9 C1,-2 2,-1 9,0 C2,1 1,2 0,9 C-1,2 -2,1 -9,0 C-2,-1 -1,-2 0,-9Z" fill="#9aa3ff" style="animation-delay:-2.6s"/></g>
+</svg>
